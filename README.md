@@ -9,3 +9,4 @@ With StyleSheet, you can create reusable style objects that can be applied to mu
 Note: The value from last element in array takes precedence.
 Not all shadow properties work on Android.
 U need elevation on android to see the effect.
+![Alt text](<Screenshot 2023-10-15 at 5.27.11 in the afternoon.png>)
