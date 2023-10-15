@@ -10,3 +10,8 @@ Note: The value from last element in array takes precedence.
 Not all shadow properties work on Android.
 U need elevation on android to see the effect.
 ![Alt text](<Screenshot 2023-10-15 at 5.27.11 in the afternoon.png>)
+
+## Style Inheritance in React Native
+
+- Unlike Bare CSS, the styles cannot be inherited from View component to
+  components inside View like Text component but inherited within nest componet in view component
