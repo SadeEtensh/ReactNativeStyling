@@ -4,10 +4,10 @@ import { StyleSheet, Text, View } from "react-native";
 export default function App() {
   return (
     <View style={styles.container}>
-      <View style={[styles.box, styles.lightblueBg]}>
+      <View style={[styles.box, styles.lightblueBg, styles.boxShadow]}>
         <Text>Lightblue Box</Text>
       </View>
-      <View style={[styles.box, styles.lightgreenBg]}>
+      <View style={[styles.box, styles.lightgreenBg, styles.androidShadow]}>
         <Text>Lightgreen Box</Text>
       </View>
     </View>
@@ -22,14 +22,28 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   box: {
-    width: 100,
-    height: 100,
+    width: 250,
+    height: 250,
     padding: 10,
+    marginVertical: 15,
   },
   lightblueBg: {
     backgroundColor: "lightblue",
   },
   lightgreenBg: {
     backgroundColor: "lightgreen",
+  },
+  boxShadow: {
+    shadowColor: "#333333", // only property that works on both platforms
+    shadowOffset: {
+      width: 6,
+      height: 6,
+    },
+    shadowOpacity: 0.6,
+    shadowRadius: 4,
+    //Works onlu om iOS: to
+  },
+  androidShadow: {
+    elevation: 10,
   },
 });
