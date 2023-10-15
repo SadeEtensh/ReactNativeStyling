@@ -7,3 +7,5 @@ With StyleSheet, you can create reusable style objects that can be applied to mu
 ## Multiple Styles
 
 Note: The value from last element in array takes precedence
+Not all shadow properties work on Android
+U need elevation on android to see the effect
